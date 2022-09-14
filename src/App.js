@@ -1,4 +1,5 @@
 import React from 'react';
+import Products from './components/Products';
 
 const App = () => {
     return (
@@ -6,7 +7,7 @@ const App = () => {
 E-Commerce
 
 Left off at 9:22
-
+<Products />
         </div>
     )
 }
