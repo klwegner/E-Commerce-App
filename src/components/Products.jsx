@@ -10,6 +10,7 @@ const products = [
     description: "not suitable for external wear at school",
     price: "$20"
 },
+{ id: 3, name: "Socks", description: "super soft, super breathable, super stinky socks!", price: "$5"}
 ];
 
 function Products() {
