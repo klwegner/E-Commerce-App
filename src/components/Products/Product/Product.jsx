@@ -21,7 +21,7 @@ function Product({ product }) {
           <Typography variant="h5" gutterBottom>
             {product.name}
           </Typography>
-          <Typography variant="h5">{product.price}</Typography>
+          <Typography variant="h5">{product.price.raw}</Typography>
         </div>
         <Typography variant="body2" color="textSecondary">
           {product.description}
