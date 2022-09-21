@@ -15,7 +15,7 @@ function Product({ product }) {
     const classes = useStyles();
   return (
     <Card className={classes.root}>
-      <CardMedia className={classes.media} image={product.image} title={product.name} />
+      <CardMedia className={classes.media} image={product.image.url} title={product.name} />
       <CardContent>
         <div className={classes.cardContent}>
           <Typography variant="h5" gutterBottom>

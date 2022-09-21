@@ -9,17 +9,19 @@ const Navbar = () => {
     return (
     <>
 <AppBar position='fixed' className='classes.appBar' color='inherit'>
-    <Typography varient="h6" className={classes.title} color="inherit">
-        <img src={logo} alt='Kristen Kommerce' height='25px' className={classes.name} />
+   <Toolbar>
+    <Typography variant="h6" className={classes.title} color="inherit">
+        <img src={logo} alt='Kristen Kommerce' height='25px' className={classes.image} />
     </Typography>
     <div className={classes.grow} />
     <div className={classes.button}>
         <IconButton aria-label="Show cart items" color='inherit'>
-            <Badge badgeContent={0} color="secondary">
+            <Badge badgeContent={10} color="secondary">
                 <ShoppingCart />
             </Badge>
         </IconButton>
     </div>
+    </Toolbar>
 </AppBar>
     </>
   )
