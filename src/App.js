@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 // import { Navbar } from './components';
 // import  Products from './components/Products/Products.jsx';
 
-import { Products, Navbar } from "./components";
+import { Products, Navbar, Cart } from "./components";
 import { commerce } from "./lib/commerce";
+
+
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -30,17 +32,14 @@ const App = () => {
 
   console.log(cart);
 
-  console.log(products);
-
   return (
     <div>
       <Navbar totalItems={cart.total_items} />
       Kristen's E-Commerce App 
       
-      Left off at 1:01
-
-
-      <Products products={products} onAddToCart={handleAddToCart} />
+      Left off at 
+      {/* <Products products={products} onAddToCart={handleAddToCart} /> */}
+    <Cart cart={cart}/>
     </div>
   );
 };
