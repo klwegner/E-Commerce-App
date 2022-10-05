@@ -37,9 +37,11 @@ const App = () => {
       <Navbar totalItems={cart.total_items} />
       Kristen's E-Commerce App 
       
-      Left off at 
-      {/* <Products products={products} onAddToCart={handleAddToCart} /> */}
-    <Cart cart={cart}/>
+      Left off at cart section (not functioning)
+
+
+      <Products products={products} onAddToCart={handleAddToCart} />
+    {/* <Cart cart={cart}/> */}
     </div>
   );
 };
