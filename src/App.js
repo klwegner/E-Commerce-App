@@ -10,10 +10,13 @@ import { commerce } from "./lib/commerce";
 const App = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchProducts = async () => {
+    setIsLoading(true);
     const { data } = await commerce.products.list();
     setProducts(data);
+    setIsLoading(false);
   };
 
   const fetchCart = async () => {

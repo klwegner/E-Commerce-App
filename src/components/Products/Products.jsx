@@ -1,7 +1,9 @@
 import React from "react";
+import {useState} from 'react';
 import  { Grid } from "@material-ui/core";
 import Product from "./Product/Product";
 import useStyles from './styles';
+import Loading from "../Loading";
 
 // const products = [ 
 //   { id: 1, name: "Shoes", description: "give our shoes a gallop", price: '$100', image: "https://images.the-house.com/salomon-trail-score-hiking-shoes-black-asphalt-green-13.jpg"},
@@ -16,8 +18,13 @@ import useStyles from './styles';
 
 function Products({ products, onAddToCart }) {
   const classes = useStyles();
-  
+
+  if (isLoading) {
+    return <Loading />
+  }
   return (
+
+    
     <main className={classes.content}>
     <div className={classes.toolbar} />
       <Grid container justifyContent="center" spacing={4}>
